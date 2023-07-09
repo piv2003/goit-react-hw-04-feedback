@@ -16,7 +16,7 @@ acquainted and configure additional features
    page will automatically reload after saving changes to the project files.
 
 ## Deploy
-
+ 
 The production version of the project will automatically be linted, built, and
 deployed to GitHub Pages, in the `gh-pages` branch, every time the `main` branch
 is updated. For example, after a direct push or an accepted pull request. To do
@@ -28,7 +28,7 @@ changes to GitHub.
 "homepage": "https://your_username.github.io/your_repo_name/"
 ```
 
-Next, you need to go to the settings of the GitHub repository (`Settings` >
+Next, you need to  go to the settings of the GitHub repository (`Settings` >
 `Pages`) and set the distribution of the production version of files from the
 `/root` folder of the `gh-pages` branch, if this was not done automatically.
 
