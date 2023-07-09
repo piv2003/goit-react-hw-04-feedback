@@ -21,7 +21,7 @@ The production version of the project will automatically be linted, built, and
 deployed to GitHub Pages, in the `gh-pages` branch, every time the `main` branch
 is updated. For example, after a direct push or an accepted pull request. To do
 this, you need to edit the `homepage` field in the `package.json` file,
-replacing `your_username` and `your_repo_name` with your own, and submit the
+replacing `your_username` and  `your_repo_name` with your own, and submit the
 changes to GitHub.
 
 ```json
