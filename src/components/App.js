@@ -27,41 +27,15 @@ function onLeaveFeedback(evt) {
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  countTotalFeedback = () => {
-    const sumFeedback = Object.values(this.state).reduce(
-      (sum, elem) => sum + elem,
-      0
-    );
-    return sumFeedback;
-  };
-
-  countPositiveFeedbackPercentage = () => {
-    const totalFeedback = (this.state.good / this.countTotalFeedback()) * 100;
+function countPositiveFeedbackPercentage() {
+    if (sumFeedback === 0) return 0;
+    const totalFeedback = (good / sumFeedback) * 100;
     return Math.round(totalFeedback);
-  };
+  }
+
+
+
+
 
   render() {
     const { good, neutral, bad } = this.state;
