@@ -11,25 +11,44 @@ export default function App() {
   const options = ['Good', 'Neutral', 'Bad'];
   const sumFeedback = good + neutral + bad;
 
-  
-  onLeaveFeedback = evt => {
-    this.setState(prev => {
-      switch (evt.target.textContent) {
-        case 'Good':
-          return { good: prev.good + 1 };
+function onLeaveFeedback(evt) {
+    switch (evt.target.textContent) {
+      case 'Good':
+        setGood(prev => prev + 1);
+        break;
+      case 'Neutral':
+        setNeutral(prev => prev + 1);
+        break;
+      case 'Bad':
+        setBad(prev => prev + 1);
+        break;
+      default:console.log('Something wrong');
+        return;
+    }
+  }
 
-        case 'Neutral':
-          return { neutral: prev.neutral + 1 };
 
-        case 'Bad':
-          return { bad: prev.bad + 1 };
 
-        default:
-          console.log('Something wrong');
-          return;
-      }
-    });
-  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   countTotalFeedback = () => {
     const sumFeedback = Object.values(this.state).reduce(
