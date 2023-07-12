@@ -28,9 +28,9 @@ export const Statistics = ({
         <StatTotal>Total: {total}</StatTotal>
         <StatPositive
           style={{
-            background: `linear-gradient(#fc0f0f ${good}%, #76fa76 ${
-              neutral + bad
-            }%)`,
+            background: `linear-gradient(#fc0f0f 0%,#fc0f0f ${
+              100 - positivePercentage
+            }%, #76fa76 ${100 - positivePercentage}%,#76fa76 100%)`,
           }}
         >
           Positive feedback: {positivePercentage}%
