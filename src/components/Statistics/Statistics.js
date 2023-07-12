@@ -26,7 +26,15 @@ export const Statistics = ({
         <StatNeutral>Neutral: {neutral}</StatNeutral>
         <StatBad>Bad: {bad}</StatBad>
         <StatTotal>Total: {total}</StatTotal>
-        <StatPositive>Positive feedback: {positivePercentage}%</StatPositive>
+        <StatPositive
+          style={{
+            background: `linear-gradient(#fc0f0f ${good}%, #76fa76 ${
+              neutral + bad
+            }%)`,
+          }}
+        >
+          Positive feedback: {positivePercentage}%
+        </StatPositive>
       </StatList>
     </StatisticsField>
   ) : (
