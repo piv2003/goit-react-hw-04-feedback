@@ -8,7 +8,7 @@ export const SectionFeedback = styled.section`
   margin-top: 200px;
   max-width: 700px;
   text-align: center;
-  background-color: #fcfff6;
+  background-color: #ffffff;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 75px 75px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,

@@ -8,8 +8,9 @@ export const Title = styled.h2`
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 25px;
+  letter-spacing: 2px;
   font-weight: 900;
-  color: #f805d8;
+  color: #c706bd;
   text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.55);
 `;
 
@@ -17,6 +18,7 @@ export const StatList = styled.ul`
   display: flex;
   gap: 10px;
   justify-content: center;
+  padding-left: 0;
 
   & li {
     padding: 15px;
@@ -34,7 +36,7 @@ export const StatNeutral = styled.li`
 `;
 
 export const StatBad = styled.li`
-  background-color: #fc4a4a;
+  background-color: #f81313;
 `;
 
 export const StatTotal = styled.li`

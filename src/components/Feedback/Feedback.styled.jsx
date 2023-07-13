@@ -30,7 +30,7 @@ export const Button = styled.button`
   color: ${props => {
     switch (props.children) {
       case 'Good':
-        return '#f703d6';
+        return '#f9fab7';
       case 'Neutral':
         return '#5b73fa';
       case 'Bad':
